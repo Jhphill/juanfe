@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="musica/Cordelia (Cover Symphonic version).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <header>
+        <h1>Juan Felipe Caballero Flores</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#passions">Pasiones</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#recommendations">Recomendaciones</a></li>
+                <li><a href="#articles">Publicaciones</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="music-control">
+        <h2>Mi música favorita</h2>
+        <div class="music-container">
+            <img src="https://www.meisterdrucke.es/kunstwerke/800px/George_William_%28after%29_Joy_-_Shakespeare_Cordelia_comforting_King_Lear_in_Prison_King_Lear_Act_V_Scene_3_%28col_-_%28MeisterDrucke-1317392%29.jpg" alt="Portada de la canción Cordelia" class="music-image">
+            <div class="music-info">
+                <p id="song-title">Cordelia</p>
+                <button id="play-button">Reproducir</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about" class="hero">
+            <img src="https://i.pinimg.com/736x/28/05/4a/28054af1fe40aa1c26c256f8a2f50501.jpg" alt="Juan Felipe Caballero Flores" class="profile-image">
+            <div>
+                <h2>Sobre mí</h2>
+                <p>Soy un estudiante de ingeniería en ciencias de datos de la Universidad del Valle, en Bolivia. Me apasiona la tecnología y las redes, y formo parte de la comunidad de desarrolladores de software libre.</p>
+            </div>
+        </section>
+        
+        <section id="passions">
+            <h2>Pasiones</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Tocar Guitarra</h3>
+                    <p>Me gusta el rock argentino, especialmente canciones de la banda Airbag.</p>
+                    <ul>
+                        <li>El Mar de las Almas</li>
+                        <li>Rosa de los Vientos</li>
+                        <li>La Última Noche</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Dibujar</h3>
+                    <p>Soy fanático de las caricaturas y disfruto creando mis propias ilustraciones.</p>
+                </div>
+                <div class="project">
+                    <h3>Escuchar Música</h3>
+                    <p>Me gusta escuchar música de todo tipo, pero especialmente rock de los 90. Algunas de mis bandas favoritas son:</p>
+                    <ul>
+                        <li>Nirvana</li>
+                        <li>Pearl Jam</li>
+                        <li>Red Hot Chili Peppers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Icon" class="icon">
+                    <label>Python</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span>90%</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL Logo" class="icon">                    <label>PostgreSQL</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R Icon" class="icon">
+                    <label>R</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="recommendations">
+            <h2>Descripcion de mi persona </h2>
+            <div class="recommendations-container">
+                <div class="recommendation-card">
+                    <p class="quote">"Soy bueno en matemáticas y he ganado competencias organizadas por la Universidad San Simón."</p>
+                    <span class="author">en el colegio</span>
+                </div>
+                <div class="recommendation-card">
+                    <p class="quote">"Soy una persona entusiasta que disfruta investigar nuevas cosas."</p>
+                    <span class="author">en varios proectos de todo tipo</span>
+                </div>
+                <div class="recommendation-card">
+                    <p class="quote">"Puedo trabajar tanto solo como en equipo."</p>
+                    <span class="author">soy entusiasta en participar en equipo</span>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="contact-form">
+                <form action="">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Escriba su mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="social-media">
+            <h2>Conéctame en Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.instagram.com/tu_usuario_de_instagram" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Juan Felipe Caballero Flores - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Obtener el elemento de audio y el botón
+        const music = document.getElementById('background-music');
+        const playButton = document.getElementById('play-button');
+
+        // Agregar un evento al botón para reproducir la música
+        playButton.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                playButton.textContent = 'Pausar Música'; // Cambiar el texto del botón
+            } else {
+                music.pause();
+                playButton.textContent = 'Reproducir Música'; // Cambiar el texto del botón
+            }
+        });
+
+        function showDescription(description) {
+            document.getElementById('image-description').innerText = description;
+        }
+    </script>
+</body>
+</html>
